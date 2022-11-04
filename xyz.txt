@@ -19,9 +19,7 @@ bat 'mvn clean install'
 stage("Deploy"){
 steps
 {
-bat 'copy
-C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\maven_pipeline\\webapp\\target\\webapp.war C:\\riya\\SEM 5\\apache-tomcat-9.0.52-windows-x64\\apache-
-tomcat-9.0.52\\webapps'
+bat 'copy "C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\maven_pipeline\\webapp\\target\\webapp.war" "C:\\riya\\SEM 5\\apache-tomcat-9.0.52-windows-x64\\apache-tomcat-9.0.52\\webapps"'
 }
 }
 }
